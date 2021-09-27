@@ -1,0 +1,153 @@
+q1. What is the objective of DLA analysis?
+a1. The objective of DLA is to ease the subsequent analysis/recognition phases by identifying the document-homogeneous blocks and by determining their relationships.
+
+q2. State some DLA applications.
+a2. DLA has several important applications such as document retrieval, content categorization, text recognition, and the like.
+
+q3. Why Modern digitallibraries use OCA?
+a3. Modern digitallibraries use optical character recognition (OCR), which converts a document-image into text format.
+
+q4. Why are document-images difficult to be converted to text-format perfectly?
+a4. Document-images are difficult to be converted to text-format perfectly, due to several issues such as bleed-through, faint ink, irregular writing styles, and the like.
+
+q5. How to get satisfactory results using OCR and DIR?
+a5. To get satisfactory information retrieval results, both applications, OCR and DIR, presume that some document layout analysis (DLA) has been conducted on those archived document images.
+
+q6. What are two main aspects of document layout analysis that affect the advances in DLA research?
+a6. The layouts diversity, and the evaluation metrics.
+
+q7. Why Antonacopoulos et al. focused on magazines and technical/scientific documents only?
+a7. AS many algorithms did not follow standard evaluation methods.
+
+q8. What are the three major contributions to the research community made by the authors' paper?
+a8. It proposes a comprehensive DLA framework and presents a critical study of DLA at the various analysis levels of the framework (i.e., regional analysis, text analysis, etc.); it summarizes the different DLA techniques in the literature and categorize them at the analysis strategy level; and then identifies and discusses the three levels of DLA performance evaluations.
+
+q9. What does the authors' survey discuss about?
+a9. The survey discusses the main phases of DLA algorithms in detail; namely, preprocessing, layout analysis, and performance evaluation.
+
+q10. Why historical document analysis algorithms were highlighted in the authors' work?
+a10. As most of the previous studies tend to review contemporary printed-document DLA texture-based methods, skew-angle and document decomposition.
+
+q11. According to Kise, printed documents can be categorized into how many types?
+a11. Six types; rectangular, Manhattan, non-Manhattan, Multi-column Manhattan, horizontal overlapping, and diagonal overlapping.
+
+q12. Why Kise’s categorization is valid for contemporary handwritten document layouts?
+a12. Since manuscripts are usually handwritten.
+
+q13. How the regular layout is characterized?
+a13. The regular layout is characterized by large rectangular texts in single or multiple column/s with one paragraph on each column.
+
+q14. Explain Manhattan layout.
+a14. Documents with multiple paragraphs can be classified as Manhattan layout such as technical articles, magazines, official memos, and the like.
+
+q15. Which layouts can be classified as arbitrary?
+a15. The ones that are hand/typewritten using several styles, font types, and/or font sizes>
+
+q16. What are the five tsages of DLA framework?
+a16. Preprocessing, analysis parameter estimation, layout analysis, post-processing, and performance evaluation.
+
+q17. Explain Preprocessing of DLA.
+a17. Preprocessing is designed to transform an input raw document image into a method-oriented document image.
+
+q18. Explain layout analysis of DLA.
+a18. There are three types of layout analysis strategies; bottom-up, top-down, and hybrid. The bottom-up strategy often computes analysis parameters from the given data. It starts
+layout analysis at small document-elements such as pixels or connected-components. Then, it merges homogeneous elements to create larger zones. Finally, the integration of
+both strategies (bottom-up and top-down) yields what is called a hybrid strategy.
+
+q19. Explain post-processing of DLA.
+a19. The post-processing phase is an optional step in most DLA algorithms. Usually, it improves or generalizes the results of the DLA algorithm to other types of layouts
+
+q20. Explain analysis parameter estimation of DLA.
+a20. Pre-determined measurements that help DLA methods to control the document analysis.
+
+q21. Explain performance evaluation of DLA.
+a21. The performance evaluation of a physical analysis method is performed using standard matching methods of segmented versus ground-truth entities either at the pixel or region levels.
+
+q22. What are the two types of analysis parameter?
+a22. Model-driven or data-driven parameters.
+
+q23. What are the two tasks of document layout analysis?
+a23. Physical and logical analyses.
+
+q24. How native degradation is generated?
+a24. The native degradation is generated due to aging, ink usage, writing style, etc.
+
+q25. What is the aftermath of native degradation is generated?
+a25. It leads to layout issues such as text ink-bleeding, show-through, text fading, text-touching, text-spacing or baseline fluctuation.
+
+q26. Why binarization step is avoided in deep-learning DLA methods?
+a26. As usually, DLA methods require complete pixel intensities to derive a better layout analysis.
+
+q27. Explain projection profile?
+a27. It is known for its ease of implementation and speed in the detection of text orientation.
+
+q28. Explain Hough Transform.
+a28. The basic idea of Hough transform is to perform angular scanning of image pixels and accumulate votes of each scan in Hough space.
+
+q29. Explain Nearest Neighbor Approach.
+a29. The distance relationships among connected components can be utilized to detect and correct document skewn using Nearest Neighbor Approach.
+
+q30. Explain Cross-Correlation.
+a30. Cross-correlation method analyzes text lines to detect/correct the skew of document images.
+
+q31. Explain Line Fitting.
+a31. Line-fitting methods by nature do not require large input to find text lines. Only two points can be used to describe a line segment.
+
+q32. Explain Gradient Approach.
+a32. Gradient methods require conversion of characters into edges or lines before carrying out skew detection/correction.
+
+q33. What does the variance-based binarization methods estimate?
+a33. The variance-based binarization methods estimate the optimum grayscale threshold that separates foreground from background pixels at a point where the intra-class variance is minimal.
+
+q34. Why adaptive binarization methods are not perfect?
+a34. Using adaptive binarization on images that suffer from severe illuminations may negatively impact the produced binary image. The illumination imbalance usually introduces brighter and darker image pixels that perplex the binarization
+method.
+
+q35. Why binarization of document-images is a challenging task?
+a35. As deformations in text shapes such as fractures and merges due to dark-pixels or illumination can severely affect the threshold estimation.
+
+q36. Why machine learning algorithms became dominant in solving pattern recognition and computer vision problems?
+a36. Because the vast advances in computer technology that allowed fast processing and support larger memory capacities.
+
+q37. How the effect of data imbalance can be reduced?
+a37. The effect of data imbalance can be reduced using weights
+
+q38. Why post-processing methods are still required?
+a38. For clustering or morphological cleaning to improve the segmentation outcomes.
+
+q39. What problem is caused by multiple Voronoi neighbors?
+a39. The existence of multiple Voronoi neighbors could lead to inaccurate region extraction.
+
+q40. How multiscale analysis can help in the analysis of degraded documents?
+a40. Multiscale analysis may allow tracing of high responses at each upscale and map them back to its original level to extract document regions.
+
+q41. Why the bottom-up analysis strategy is the most frequently used?
+a41. Regardless of the required space and time complexity of the bottom-up methods, its positive characteristics, such as handling complex layouts, have attracted researchers to follow it.
+
+q42. Why Document language is an important concern?
+a42. As the analysis might be completely different from one language to another.
+
+q43. What are the three main categories for document datasets?
+a43. Printed, handwritten, and mixed.
+
+q44. Which one is the best among PEF, CEF and REF?
+a44. Customizable Evaluation Framework (CEF) as it is designed to give an in-depth performance evaluation of layout analysis.
+
+q45. Why the pixel-based evaluation metric is an aggressive and rigid method to evaluate the DLA performance?
+a45. Because it does not allow in-depth segmentation error analysis. On the other hand, it can be used for benchmarking data or method performance. Second, pure regionbased evaluation methods are rarely used. They are mainly borrowed from the Computer Vision field. This evaluationmetricmay suit evaluating methods that address large region analysis such as text-columns, figures, tables, logos extraction. Third, the customizable evaluation framework givesan in-depth segmentation error analysis.
+
+q46. Why DLAmethods are producing cutting-edge results in the DLA field?
+a46. Usually,
+such methods require long training time and huge data, however, they show high capabilities to cope with a wide range of document classes.
+
+q47. Why the binarization of document-images that suffer from varying illumination and noise is a challenging task?
+a47. Deformations in text shapes such as fractures and merges due to dark-pixels or illumination can severely affect the threshold estimation.
+
+q48. When can Static parameters can be determined?
+a48. At the beginning of the document.
+
+q49. How the dynamic parameter estimation is used?
+a49. The dynamic parameter estimation (i.e., datadriven) is computed from a document image directly. This type of estimation is used whenever the documents under analysis are heterogeneous.
+
+q50. How does Bottom-Up Strategy estimate the parameters?
+a50. Using statistics of pixel distributions, properties of connected components, words, text lines, or regions.
